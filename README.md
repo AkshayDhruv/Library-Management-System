@@ -16,7 +16,7 @@ Instruction to clean:
 2. Description: It cleans up all the .class files that were generated when you compiled your code and remove the target directory having the jar file.
 
 Instruction to compile:
-1. Command: mvn clean install
+1. Command: mvn install
 2. Description: Compiles your code and generates .class files.
 
 Working Live Application:
