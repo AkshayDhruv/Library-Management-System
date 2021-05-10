@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Library Management System</display-name>
+
+	<context-param>
+		<param-name>jdbcURL</param-name>
+		<param-value>jdbc:postgresql://ec2-54-243-67-199.compute-1.amazonaws.com:5432/ddescrik6ualgp</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>jdbcUsername</param-name>
+		<param-value>qtqphuuxvvftno</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>jdbcPassword</param-name>
+		<param-value>12081cff8982e24723ff7bbc765aa0b75d56437938696ef76641c1b707e5fc65</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>emailId</param-name>
+		<param-value>xxxxx</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>emailPassword</param-name>
+		<param-value>xxxxx</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>CommonController</servlet-name>
+		<servlet-class>com.controller.CommonController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CommonController</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<session-timeout>15</session-timeout>
+	</session-config>
+
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/WEB-INF/jsp/Error.jsp</location>
+	</error-page>
+	
+	
+</web-app>
