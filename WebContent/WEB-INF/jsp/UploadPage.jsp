@@ -217,13 +217,13 @@ function test(){
 						<h3 style="text-align: center" id="status"></h3>
 						<p style="text-align: center" id="loaded_n_total"></p>
 					</form> <br />
-					<form method="post" action="download">
+					<!-- <form method="post" action="download">
 						<button class="btn btn-primary"
 							style="float: none; width: 100%; font-size: 14px; text-align: center"
 							type="submit" name="submit" id="formButton">
 							<i class="fa fa-download"></i> Download Sample File
 						</button>
-					</form>
+					</form> -->
 				</td>
 			</tr>
 		</table>
